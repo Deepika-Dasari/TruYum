@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Edit Menu item list</title>
+<style>
+header {
+  background-color: #483D8B;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #808080;
+   color: white;
+   text-align: left;
+}
+.button1 {
+  background-color: #483D8B;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form 
+    {
+  width: 120%;
+  padding: 90px;
+  margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+ 
+}
+.flex-container > div {
+ 
+  font-size: 15px;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #483D8B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li> <h2>truYum &nbsp </h2>  </li>
+  <img src="logo.png" alt="logo" width=30 height=30>
+  <li style="float:right"><a href="menu-item-list-admin.html">Menu</a>  
+</ul>
+
+<form>
+<h1>Edit Menu Item</h1>
+	<div id='namediv'>
+<label for="name">Name</label><br>
+  <input type="text" id="name" name="name">
+</div>
+<div class="flex-container">
+<div id="priceitem">
+ <label for="price">Price (Rs.)</label><br>
+  <input type="number" id="price" name="price">
+</div>
+<div id="wrapper">
+  <label for="radio">Active</label><br>
+<input type="radio" name="yes_no" checked>Yes</input>
+<input type="radio" name="yes_no">No</input>
+
+</div>
+<div id="dateitem">
+ <label for="date">Date of Launch</label><br>
+  <input type="date" id="date" name="date">
+</div>
+<div id="category">
+	<label for="category">Category</label><br>
+
+<select name="category" id="category">
+    <option value="starters">Starters</option>
+    <option value="main">Main Course</option>
+  <option value="dessert">Dessert</option>
+  <option value="drinks">Drinks</option>
+</select>
+</div>
+</div>
+<div id='freedelivery'>
+	
+<input type="checkbox" id="delivery" name="delivery" value="Free Delivery"> Free Delivery
+</div>
+<div id='button1'>
+<button type="button">Save</button>
+</div>
+</form>
+	<div class="footer">
+  <p>Copyright © 2019</p>
+</div>
+
+</body>
+
+
+
